@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#">Link</a>
+    <a href="buy.html">To buy page</a>
+    <a href="buy.html" target="_blank">To buy mod</a> <br>
+    <a href="https://www.google.com" target="_blank">Go to internet</a>
+    <ul>
+        <li>Milk
+            <ol>
+                <li>fat 5%</li>
+                <li>fat 15%</li>
+                <li>fat 50%</li>
+            </ol>
+        </li>
+        <li>
+            Orange
+        </li>
+        <li>
+            Tomato
+        </li>
+    </ul>
+
+    <ol type="a">
+        <li>Stiv</li>
+        <li>Rick</li>
+        <li>Jon</li>
+        <li>Stiv</li>
+        <li>Rick</li>
+        <li>Jon</li>
+    </ol>
+    <ol start="4">
+        <li>Stiv
+            <ol start="4">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ol>
+        </li>
+        <li>Rick</li>
+        <li>Jon</li>
+        <li>Stiv</li>
+        <li>Rick</li>
+        <li>Jon</li>
+    </ol>
+    <h3>
+        Skills
+    </h3>
+    <ul>
+        <!-- Так робити не можна <h3>
+            Skills
+        </h3> -->
+        <li>
+            <a href="#">html</a>
+        </li>
+        <!-- Так робити не можна <hr>
+        <br> -->
+        <li>
+            <a href="#">css</a>
+        </li>
+        <li>
+            <a href="#">js</a>
+        </li>
+    </ul>
+    <div>
+        <h3>
+            Titlle
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, architecto.</p>
+    </div>
+    <div>
+        <h3>
+            Titlle
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, architecto.</p>
+    </div>
+    <div>
+        <h3>
+            Titlle
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, architecto.</p>
+    </div>
+    <header>
+        block
+        <nav>
+            <a href="#">Main page</a>
+            <a href="#">About</a>
+            <a href="#">Shop list</a>
+        </nav>
+    </header>
+    <section>
+        block
+    </section>     
+    <main>
+        block
+    </main>
+    <footer>
+        block
+    </footer>
+    <hr>
+    <table border="4" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>
+                    Імя
+                </th>
+                <th>
+                    Призвіще
+                </th>    
+                <th>
+                    age
+                </th>            
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Max
+                </td>
+                <td>
+                    SecondName
+                </td>
+                <td>
+                    20
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tim
+                </td>
+                <td>
+                    SecondName
+                </td>
+                <td>
+                    20
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Max
+                </td>
+                <td>
+                    SecondName
+                </td>
+                <td>
+                    20
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tim
+                </td>
+                <td>
+                    SecondName
+                </td>
+                <td>
+                    20
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="4" style="width: 100%;">
+        <thead>
+            <tr>
+                <th colspan="2">
+                    Імя/
+                    Призвіще
+                </th>    
+                <th>
+                    age
+                </th>            
+            </tr>
+
+        </thead>
+        <tbody>
+            <!--  Помилка <h4>
+                df
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel repudiandae obcaecati ullam. Nobis tenetur consequatur non, quibusdam quos at. Cupiditate tempore obcaecati magnam voluptatum expedita error facere, reprehenderit modi iure.
+            </p>-->
+            <tr> 
+                <td>
+                    Max
+                </td>
+                <td>
+                    SecondName
+                </td>
+                <td rowspan="2">
+                    20
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Max
+                </td>
+                <td>
+                    SecondName
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+
+    <form action="">
+        <div>
+            <label for="name">
+                Name
+            </label>
+            <input id="name" placeholder="type your name" type="text">
+        </div>
+        <div>
+            <label for="password">
+                Password
+            </label>
+            <input disabled id="password" type="password">
+        </div>
+
+        <div>
+            <select name="" id="">
+                <option value="01">Курс з Html за 2 години</option>
+                <option selected value="02">CSS</option>
+                <option disabled value="03">JS</option>
+            </select>
+        </div>
+        <div>
+            <label for="text-block">TextArea</label>
+            <textarea placeholder="Text block" name="" id="text-block" cols="3" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+        <div>
+            <label for="check1">
+                Optin1
+            </label>
+            <input type="checkbox"  id="check1">
+        </div>
+        <div>
+            <label for="check2">
+                Optin2
+            </label>
+            <input type="checkbox"  id="check2">
+        </div>
+        <div>
+            <label for="check3">
+                Optin3
+            </label>
+            <input type="checkbox"  id="check3">
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input selected type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+        </div>
+        <button>
+            Button
+        </button>
+        
+    </form>
+    <button>+1 item</button>
+    <a href="#">Visit basket</a>
+    <div>
+        <img src="logoK.png" alt="Course logo">
+        <img src="img/smile.png" alt="Smile face">
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
