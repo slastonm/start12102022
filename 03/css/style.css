@@ -1,0 +1,105 @@
+body{
+    background-color: pink;
+}
+header{
+    background-color: #FAC960;
+}
+footer{
+    background-color: #000;
+}
+h3,
+p{
+    color: #fff;
+}
+
+.class-name{
+    color:green;
+}
+p.class-name{
+    font-size: 15px;
+}
+.class-name.big-size-font{
+    font-size: 20px;
+}
+body p.class-name.big-size-font.bg-block{
+    background-color: red;
+}
+.bg-block{
+    background-color: violet;
+}
+ .class-name.bg-block{
+    background-color: black;
+}
+p.class-name.big-size-font.bg-block{
+    /* background-color: #fff!important;  обмежене використання*/
+}
+*{
+    text-decoration: underline;
+}
+
+#text-id{
+    color: orangered;
+    font-size: 25px;
+}
+
+.class-name>strong{
+    font-size: 20px;
+}
+.class-name div>strong{
+    font-size: 25px;
+}
+.mobile{
+    display: none;
+}
+ul li:first-child{
+    background-color: green;
+   
+}
+ul li:nth-child(4){
+    background-color: red;
+}
+ul li:last-child{
+    background-color: greenyellow;
+    
+}
+a[href="main.html"]{
+    font-size: 40px;
+    color:rgba(0, 0, 0, 0.5);
+}
+/* DRY */
+
+/* h3,
+p{
+    color: green;
+} */
+/* cmnd ctrl + / */
+
+h3{
+    /* text-align: right; */
+    text-align: center;
+    font-size: 47px;
+
+}
+p{
+    line-height: 2;
+}
+nav{
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+div{
+    width: 800px;
+    height: 300px;
+    /* padding: 50px; */
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 60px;
+    
+    /* padding: 20px 60px 25px 50px; */
+    /* padding: 20px 50px; */
+    margin: 100px auto;
+}
+
