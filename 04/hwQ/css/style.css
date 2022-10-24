@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+.text-center{
+    text-align: center;
+}
+h3{
+    font-size: 37px;
+    /* text-align: center; */
+    margin: 0 0 42px 0;
+}
+h4{
+    font-size: 44px;
+    text-align: center;
+}
+container,
+.wrapper{
+    width: 940px;
+    margin: 0 auto;
+}
+.logo-block,
+.social-block{
+    display: inline-block;
+    width: 466px;
+}
+.social-block{
+    text-align: right;
+}
+header{
+    padding: 17px 0 23px;
+}
+.social-block ul{
+    margin: 0;
+    padding: 0;
+}
+.social-block ul li{
+    display: inline-block;
+    padding-top: 7px;
+    padding-left: 20px;
+    list-style: none;
+}
+.active-background,
+.email-form,
+.tell{
+    background-color: #FAC960;
+}
+.secondary-bg{
+    background-color: #9e9d9a;
+}
+.email-form{
+    padding: 110px 0 117px;
+}
+.email-form form{
+    width: 805px;
+    margin: 0 auto;
+}
+.email-input,
+.submit-button{
+    display: inline-block;
+}
+.email-input{
+    padding: 10px;
+    width: 559px;
+}
+.submit-button{
+    padding: 11px;
+    width: 238px;
+    text-align: center;
+    color: #fff;
+    background-color: #A8863D;
+}
+.email-form-title,
+.email-form-sub-title{
+    color: #8A6D2F;
+}
+.email-form-title{
+    margin: 0;
+    font-size: 44px;
+}
+.email-form-sub-title{
+    font-size: 43px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.infinity{
+    padding: 78px 0;
+}
+
+.infinity h3{
+    color: rgba(0, 0, 0, 0.56);
+}
+.infinity p{
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 60px;
+    padding: 0 50px;
+}
+footer{
+    background-color: #F2F2F2;
+    padding: 80px 0;
+}
+footer ul{
+    margin: 24px 0 0 0;
+    padding: 0;
+}
+footer ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+
+
+
