@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+.bg-block{
+    width: 700px;
+    height: 1700px;
+    margin: 0 auto;
+    background-color: yellow;
+    background-image: url('../img/iPhone13.png'),url('../img/bg.jpeg');
+}
+.avatar{
+    text-align: center;
+    border: 1px solid black;
+    height: 700px;
+    width: 800px;
+    margin: 100px auto;
+    background-image: url('../img/avatar.png');
+    background-repeat: no-repeat;
+   /* background-repeat:repeat-x; */
+     /* background-repeat:repeat-y; */
+    background-position: center;
+    /* background-position: bottom right; */
+    /* background-position: top 50px left 300px; */
+    /* background-size: contain; */
+    background-size: cover;
+
+}
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    /* width: 100px;
+    height: 40px; */
+    text-align: center;
+    background-color: rgb(30, 30, 215);
+
+}
+button:hover{
+    background-color: rgb(7, 7, 55);
+
+}

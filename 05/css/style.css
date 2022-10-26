@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+h1{
+    position: relative;
+    /* text-align: center; */
+    padding: 0 120px;
+    display: inline-block;
+}
+h1::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: blueviolet;
+    font-size: 20px;
+    width: 100px;
+    height: 5px;
+    bottom: 10px;
+    left: 0;
+}
+h1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: blueviolet;
+    font-size: 20px;
+    width: 100px;
+    height: 5px;
+    bottom: 10px;
+    right: 0;
+}
+.table{
+    display: table;
+    width: 1000px;
+    border: 1px solid #333;
+
+}
+.row{
+    display: table-row;
+}
+.cell{
+    display: table-cell;
+    border: 1px solid red;
+    vertical-align: middle;
+}
+.cell:first-child{
+    height: 100px;
+}
+.float-block{
+    margin: 20px auto;
+    /* border: 2px solid red; */
+    width: 600px;
+}
+/* .float-block:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+.first,
+.second{
+    width: 300px;
+    padding: 30px;
+}
+.first{
+    float: left;
+    background-color: aliceblue;
+}
+.second{
+    float: right;
+    background-color: blanchedalmond;
+}
+.columns{
+    background-color: yellow;
+    width: 600px;
+    margin: 0 auto;
+}
+.columns>div{
+    float: left;
+    width: 200px;
+}
+header{
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid red;
+    z-index: 2;
+}
+.logo{
+    float: left;
+}
+.menu{
+    float: right;
+}
+.columns-img{
+    width: 600px;
+    margin: 0 auto;
+}
+.columns-img>img{
+    float: right;
+}
+.columns-img p:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+a:hover{
+    color: green;
+    font-size: 20px;
+    
+}
+
+.hover-card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: blue;
+    overflow: hidden;
+}
+.inner-card{
+    position: absolute;
+    bottom: 10px;
+    background-color:  yellow;
+    
+}
+
+.hover-card:hover .inner-card{
+    bottom: 100px;
+    left: -100px;
+}
+
+.tex-overflow{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin: 50px auto;
+    overflow: hidden;
+}
