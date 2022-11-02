@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* padding: 50px; */
+    background-color: rgb(165, 168, 174);
+ 
+}
+header{
+    background-color: lightblue;
+}
+a{
+    /* font-size: 3vw; */
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px 0;
+    background-color: yellow;
+}
+.mobile{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+.logo{
+    width: 200px;
+}
+/* Після розміру екрану в 1000рх */
+/* @media(max-width:1000px){
+    .container{
+        width: 500px;
+        padding: 50px 0;
+        background-color: rgb(255, 0, 25);
+        
+    }
+    .container a{
+        font-size: 30px;
+    }
+}
+@media(max-width:800px){
+    .container{
+        width: 500px;
+        padding: 150px 0;
+        background-color: rgb(7, 127, 61);
+        
+    }
+    .container a{
+        font-size: 40px;
+    }
+    .desktop{
+        display:none;
+    }
+}
+@media(max-width:600px){
+    .container{
+        width: 300px;
+        padding: 50px 0;
+        flex-direction: column;
+        background-color: rgb(172, 211, 19);
+        
+    }
+    .container a{
+        font-size: 50px;
+    }
+    .mobile{
+        display: block;
+    }
+
+} */
+/* Коли ширина більше 500рх */
+
+
+/* @media(min-width:500px){
+    .container{
+        width:90%;
+        padding: 50px 0;
+        flex-direction: column;
+        background-color: rgb(172, 211, 19);
+        
+    }
+}
+@media(min-width:700px){
+    .container{
+        width:50%;
+        padding: 50px 0;
+        flex-direction: column;
+        background-color: rgb(211, 19, 19);
+        
+    }
+} */
+
+@media screen and (min-width:500px) and (max-width:1000px) {
+    .container{
+        width:50%;
+        padding: 150px 0;
+        flex-direction: column;
+        background-color: rgb(8, 1, 1);
+    }
+}
+
+@media (1200px<=width<=1500px) {
+    .container{
+        width:50%;
+        padding: 250px 0;
+        flex-direction: column;
+        background-color: rgb(193, 4, 4);
+    }
+}
+@media(max-width:500px){
+    .mobile-menu{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+}
+@media print{
+
+}
+@media ( min-aspect-ratio:4/3){
+
+}
+section{
+    display: flex;
+    
+}
+.first,
+.second{
+    width: 100%;
+    height: 100px;
+}
+.first{
+    background-color: blue;
+    min-width: 300px;
+}
+.second{
+    background-color: rgb(47, 255, 0);
+    max-width: 500px;
+}
