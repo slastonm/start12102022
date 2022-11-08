@@ -1,0 +1,122 @@
+@import "_var";
+$main-color:#333;
+$main-bg:yellow;
+:root{
+    --main-section-bg:#{$main-bg};
+}
+body{
+    background-color: $main;
+    color: $main-color;
+}
+// nav{
+//     background-color: $main-bg;
+//     ul{
+//         margin: 0;
+//         padding: 0;
+//         li{
+//             padding: 20px;
+//             a{
+//                 text-decoration: none;
+//                 color: $main-color;
+//             }
+//         }
+//     }
+// }
+.nav-block{
+    background-color: red;
+    &-item{
+        margin: 0;
+        &-link{
+            color:white;
+        }
+    }
+    &-link{
+        color:black;
+
+    }
+    @media(max-width:700px){
+        background-color: gray;
+    }
+}
+// #test{
+//     background-color: blue;
+//     &-item{
+//         color:green;
+//     }
+// }
+div{
+    h3{
+        font-size: 20px;
+        color:red;
+        &::before{
+            content: "!!!!!!!";
+            color: #fff;
+        }
+        &:hover{
+            font-size: 40px;
+            color:green;
+            text-align: center;
+            &::before{
+                color: blueviolet;
+            }
+        }
+    }
+}
+@mixin reset-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.first{
+    @include reset-list;
+}
+.second{
+    @include reset-list;
+}
+
+@mixin avatar($size, $radius:0) {
+    width: $size;
+    height: $size;
+    overflow: hidden;
+    @if $radius !=0{
+        border-radius: $radius;
+    }
+}
+.avatar-big{
+    @include avatar(150px, $radius:10px);
+    background-color: gold;
+}
+.avatar-small{
+    @include avatar(50px, $radius:50px);
+    background-color: silver;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}  
+}
+input{
+    @include placeholder{
+        color:blue;
+        font-size:20px;
+    }
+}
+
+.alert{
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid red;
+}
+.danger{
+    @extend .alert;
+    background-color: red;
+}
+.info{
+    @extend .alert;
+    background-color: blue;
+    color: #fff;
+}
+
+
