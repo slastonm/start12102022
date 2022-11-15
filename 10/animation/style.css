@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+svg {
+  fill: red;
+  stroke: blue;
+}
+
+svg path {
+  fill: yellow;
+}
+
+
+@keyframes example {
+  from{
+    background-color: red;
+    /* border-radius: 0; */
+    rotate: 0;
+  }
+  to{
+    background-color: black;
+    border-radius: 50%;
+    rotate: 360deg;
+  }
+}
+@keyframes pro{
+  0%{
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+  5%{
+    top: 100px;
+    left: 100px;
+    background-color: yellow;
+  }
+  25%{
+    top: 150px;
+    left: 100px;
+    background-color: yellow;
+  }
+  50%{
+    top:200px;
+    left: 200px;
+    background-color: blue;
+  }
+  75%{
+    top:400px;
+    left: 400px;
+    background-color: blue;
+  }
+  100%{
+    top:100px;
+    left: 0;
+    background-color: red;
+  }
+}
+.animate-block{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* animation-name: example; */
+  /* animation-name: pro; */
+  animation-duration: 10s;
+  /* animation-iteration-count: 2; */
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+@keyframes move {
+  from {
+    left: 0px;
+    rotate: 0deg;
+  }
+  to {
+    rotate: 30deg;
+    left: 1800px;}
+}
+.animatio-type>div {
+  width: 90px;
+  height: 90px;
+  padding: 5px;
+  color: #fff;
+  background-color: rgb(54, 74, 11);
+  font-weight: bold;
+  position: relative;
+  animation-name: move;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+.linear {animation-timing-function: linear}
+.ease {animation-timing-function: ease;}
+.ease-in {animation-timing-function: ease-in;}
+.ease-out {animation-timing-function: ease-out;}
+.ease-in-out {animation-timing-function: ease-in-out;}
+.custom{
+  /* animation: move 5s linear infinite; */
+  animation-timing-function: cubic-bezier(.49,1.94,.56,.01);
+}
+.transition{
+  height: 100px;
+  width: 100px;
+  margin: 3px;
+  display: inline-block;
+  background-color: lightblue;
+  /* transition: width 4s, background-color 2s; */
+  transition: all 4s;
+  /* overflow: hidden; */
+  transition-delay: 5s;
+
+}
+
+.transition:hover{
+  /* width: 200px; */
+  background-color: green;
+  /* scale:0.5 2.2; */
+  /* transform: skew(50deg, 10deg); */
+  /* transform: skewX(40deg); */
+  rotate: 90deg;
+
+}
+.rotate{
+  animation-name: example;
+  animation-duration: 10s;
+  /* animation-iteration-count: 2; */
+  animation-iteration-count: infinite;
+  /* animation-timing-function: ease; */
+}

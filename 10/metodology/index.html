@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        
+        <ul>
+            <li><a href="#"></a>
+                <ul>
+                    <ul>
+                        <li><a href=""></a></li>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <h3>
+        Object-Oriented CSS
+    </h3>
+    <style>
+        .button{
+            padding: 10px;
+            cursor: pointer;
+        }
+        .btn-link{
+            text-decoration: none;
+            border: 1px solid red;
+        }
+        .primary-btn{
+            background-color: blue;
+            color:white;
+        }
+        .danger-btn{
+            background-color: orange;
+            color: black;
+        }
+    </style>
+    <button class="button danger-btn">Hello</button>
+    <a href="#" class="button btn-link">Link</a>
+    <h3>
+        Atomic CSS ( ACSS)
+    </h3>
+    <style>
+        .mb-sm { margin-bottom: 16px; }
+        .mb-lg { margin-bottom: 32px; }
+    </style>
+    <h3>
+        Block Element Modifier
+    </h3>
+    <style>
+        /* header a{
+            для бем неправильно
+            .class .class a
+
+            .class a
+        } */
+    </style>
+    <ul class="list__block list__block--inline">
+        <li class="list__block__item">
+            <a href="#" class="list__block__item__link">Link</a>
+        </li>
+    </ul>
+    <h3>
+        Scalable and Modular Architecture for CSS (SMACSS)
+    </h3>
+    <style>
+        .butoon{
+            padding: 10px;
+        }
+        .button.is-disabled{
+            background-color: gray;
+        }
+        .button.active{
+            background-color: red;
+        }
+    </style>
+    <div class="grid">
+        <div class="left-top"></div>
+        <div class="left-midle"></div>
+        <div class="left-bottom"></div>
+        <div class="center-section"></div>
+    </div>
+</body>
+</html>
